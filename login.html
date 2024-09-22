@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<title>Login SignUp</title>
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- It will redirect to the Home Page after submitting the form -->
+  <script>
+  $(document).ready(function(){
+    $("form").submit(function(){
+      alert("Great Job !");
+    });
+  });
+  function login() {
+        document.getElementById("btn").style.left = "0px";  // Move to the "Log In" button
+        document.getElementById("log").style.color = "#fff";  // Change text color of "Log In"
+        document.getElementById("reg").style.color = "#000";  // Reset text color of "Register"
+        
+        document.getElementById("login").style.left = "50px"; // Show login form
+        document.getElementById("register").style.left = "450px"; // Hide register form
+        // Show the "or" line and Google sign-in button when login is active
+        document.getElementById("other").style.display = "block";
+    }
+    function register() {
+        document.getElementById("btn").style.left = "110px";  // Move to the "Register" button
+        document.getElementById("reg").style.color = "#fff";  // Change text color of "Register"
+        document.getElementById("log").style.color = "#000";  // Reset text color of "Log In"
+        
+        document.getElementById("login").style.left = "-400px";  // Hide login form
+        document.getElementById("register").style.left = "50px";  // Show register form
+        // Hide the "or" line and Google sign-in button when register is active
+        document.getElementById("other").style.display = "none";
+    }
+  </script>
+</head>
+<body>
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+				<button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+				<img src="fb2.png">
+				<img src="insta2.png">
+				<img src="tt2.png">
+			</div>
+			
+			<!-- Login Form -->
+			<form id="login" class="input-group" action="home.html">
+				<div class="inp">
+					<img src="user.png"><input type="text" id="email" class="input-field" placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required">
+				</div>
+				<div class="inp">
+					<img src="password.png"><input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required">
+				</div>
+				<input type="checkbox" class="check-box">Remember Password
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+
+
+			<div class="other" id="other">
+				<div class="instead">
+					<h3>or</h3>
+				</div>
+				<button class="connect" onclick="google()">
+					<img src="google.png"><span>Sign in with Google</span>
+				</button>
+			</div>
+			
+			<!-- Registration Form -->
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="Full Name" required="required">
+				<input type="email" class="input-field" placeholder="Email Address" required="required">
+				<input type="password" class="input-field" placeholder="Create Password" name="psame" required="required">
+				<input type="password" class="input-field" placeholder="Confirm Password" name="psame" required="required">
+				<input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms & Conditions
+				<button type="submit" id="btnSubmit" class="submit-btn reg-btn">Register</button>
+			</form>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

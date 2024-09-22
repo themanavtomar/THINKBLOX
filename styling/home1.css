@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+
+	font-family: 'Open Sans', sans-serif;
+}
+nav {
+	top: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	z-index: 1000;
+	background: #fff;
+	justify-content: space-around;
+	transition: 1.5s;
+	align-items: center;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav ul li {
+	list-style: none;
+	margin: 5px 10px;
+}
+nav ul li a {
+	padding: 2px 10px;
+	color: #2e2e2e;
+	cursor: pointer;
+	transition: .5s;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #fff;
+	border-radius: 5px;
+	background: #DF2771;
+}
+.active {
+	color: #fff;
+	border-radius: 5px;
+	background: #DF2771;
+}
+.srch {
+	padding: 2px 10px;
+	display: flex;
+	justify-content: center;
+	border: 1px solid;
+	border-radius: 20px;
+}
+.srch img {
+	width: 25px;
+	cursor: pointer;
+}
+.srch .search {
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+.get-started {
+	margin-left: 50px;
+	padding: 5px 20px;
+	border: 2px solid #DF2771;
+	border-radius: 20px;
+	text-decoration: none;
+	
+	transition: .5s;
+	background-color: #DF2771;
+	color: #fff;
+}
+.get-started:hover {
+	color: #2e2e2e;
+	background: #fff;
+}
+.logo img{
+	width: 45px;
+	cursor: pointer;
+	transition: all 1s;
+}
+.head-container {
+	margin-top: 245px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.quote {
+	width: 600px;
+	transform: translateY(-50px);
+}
+.quote p {
+	font-size: 50px;
+	color: #2e2e2e;
+}
+.quote h5 {
+	margin-top: 20px;
+	color: #0009;
+	line-height: 20px;
+}
+.vid{
+	padding-bottom: 5%;
+}
+.vision{
+	margin-top: 5%;
+	color: #0009;
+
+}
+.cbox {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4%;
+    gap: 50px;
+}
+
+.zoom-img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.det1:hover .zoom-img,
+.det2:hover .zoom-img,
+.det4:hover .zoom-img {
+    transform: scale(1.5);
+}
+
+.det1 img {
+    width: 150px;
+    height: 150px;
+}
+
+.det2 img {
+    width: 200px;
+    height: 150px;
+    margin-left: 120px;
+}
+
+.det4 img {
+    width: 220px;
+    height: 140px;
+    border-radius: 20px;
+}
+
+
+.diffSection {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.diffSection {
+	margin: 10px;
+	text-align: center;
+	padding: 10px ;
+}
+.diffSection img{
+	border-radius: 2%;
+	margin-right: 10px;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    background: url('../edu.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 60%;
+    margin-top: 6.8%;
+    z-index: -1;
+    opacity: 0.8;
+}
+/*ABOUT*/
+
+.about-content {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+	margin-bottom: 10%;
+    opacity: 0;
+    animation: fadeIn 0.7s ease 0.7s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 2;
+	}
+}
+
+.about-content .side-text {
+    width: 550px;
+    padding: 50px 40px;
+    background: #fff;
+    box-shadow: 2px 0 100px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+/* SIDE MENU */
+.menu {
+	display: none;
+}
+
+/*FOOTER*/
+footer {
+	color: #E5E8EF;
+	background: #000D;
+	padding: 50px 0; 
+}
+footer .footer-container {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+footer .social-media img{
+	width: 22px;
+}
+footer .logo {
+	width: 180px;
+	color: #fff;
+}
+footer .social-media a{
+	margin-right: 10px;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+/*PROPERTIES FOR MAKING WEBSITE RESPONSIVE*/
+@media screen and (max-width: 960px) {
+	.footer-container {
+		max-width: 600px;
+	}
+	.right-col {
+		width: 100%;
+		margin-bottom: 60px;
+	}
+	.left-col {
+		width: 100%;
+		text-align: center;
+	}
+	.social-media {
+		display: flex;
+		justify-content: center;
+	}
+	.logo {
+		transition: 1s;
+		margin-left: 30%;
+	}
+	nav ul, .srch, .get-started{
+		display: none;
+	}
+	.menu {
+		display: block;
+	}
+	nav {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #0005;
+
+	}
+	.quote p, .quote h5, .play {
+		justify-content: center;
+		text-align: center;
+	}
+	.quote p {
+		font-size: 30px;
+	}
+	.service-container .right-side img {
+		width: 90%;
+	}
+	.title {
+		margin-top: 0px;
+	}
+	
+}
+@media screen and (max-width: 700px) {
+	footer .btn{
+		margin: 0;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.svg-image img {
+		width: 90%;
+		margin: 20px;
+	}
+}
+
+@media screen and (max-width: 1000px) {	
+	.feedbox form input, .feedbox form .fname{
+		width: 100%;
+	}
+}
+
+.dropbtn {
+	
+	color: black;
+	border: none;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	/* padding: 12px 16px; */
+	gap: 2px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+.email-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for button size */
+    background-color: #007BFF; /* Primary color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.email-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.email-button:active {
+    transform: translateY(0); /* Reset lift effect when clicked */
+}

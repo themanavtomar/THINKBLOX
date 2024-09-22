@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="styling/home.css">
+	<link rel="stylesheet" type="text/css" href="styling/quiz.css">
+	
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+	<link rel="stylesheet" type="text/css" href="chatbot/style.css">
+	<script src="chatbot/script.js" defer></script>
+</head>
+<body>
+    <header id="header">
+		<nav>
+			<div class="logo"><a href="images/logo.png" target="_blank"><img src="images/logo.png" alt="logo"></a></div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><div class="dropdown">
+					<a href="" class="dropbtn">Elearn</a>
+					<div class="dropdown-content">
+					  <a href="elearn.html">E-Videos</a>
+					  <a href="ebook.html">E-Books</a>
+					</div>
+				  </div></li>
+                <li><a class="active" href="quiz.html">Quiz</a></li>
+                <li><a href="todo.html">To-DO</a></li>
+                <li><a href="mentor.html">Mentorship</a></li>
+				<li><a href="dictionary.html">Dictionary</a></li>
+				<li><a href="tutor.html">Tutor Nearby</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<!-- <div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/search.jpg" alt="search" onclick=slide()></div> -->
+			<a class="get-started" href="login.html">Get Started</a>
+			<img src="images/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		</div>
+	</header>
+	<button class="chatbot-toggler">
+		<span class="material-symbols-rounded">mode_comment</span>
+		<span class="material-symbols-outlined">close</span>
+	  </button>
+	  <div class="chatbot" >
+		<header>
+		  <h2>Chatbot</h2>
+		  <span class="close-btn material-symbols-outlined">close</span>
+		</header>
+		<ul class="chatbox">
+		  <li class="chat incoming">
+			<span class="material-symbols-outlined">smart_toy</span>
+			<p>Hi there 👋<br>How can I help you today?</p>
+		  </li>
+		</ul>
+		<div class="chat-input">
+		  <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+		  <span id="send-btn" class="material-symbols-rounded">send</span>
+		</div>
+	  </div>
+	<div class="title">
+		<span>Popular Subjects on ThinkBlox</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="Quiz/Aptitude/aptitude.html"><img src="images/aptitude.png">Aptitude Test</a></div>
+		<div class="det"><a href="Quiz/English/english.html"><img src="images/eng.png">English Test</a></div>
+		<div class="det"><a href="Quiz/GK/gk.html"><img src="images/gk.png">GK Test</a></div>
+		</div></center>
+		<div class="cbox">
+		<div class="det"><a href="Quiz/Maths/maths.html"><img src="images/math.png">Maths Test</a></div>
+		<div class="det"><a href="Quiz/Programing/programming.html"><img src="images/pro.png">Programming</a></div>
+		<div class="det"><a href="Quiz/Science/science.html"><img src="images/science.png">Science</a></div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<div class="logo"></div>
+				<div class="social-media">
+					<!-- <a href="#"><img src="images/facebook.png"></a> -->
+					<a href="https://www.instagram.com/manavtomarrr/" target="_blank"><img src="images/insta.png"></a>
+					<a href="https://x.com/themanavtomar" target="_blank"><img src="images/tt.png"></a>
+					<a href="https://www.youtube.com/@manavtomarr" target="_blank"><img src="images/ytube.png"></a>
+					<a href="https://www.linkedin.com/in/themanavtomar/" target="_blank"><img src="images/linkedin.png"></a>
+				</div><br>
+				<p class="rights-text">Copyright © 2024 Created By Team - ThinkBlox</p>
+				<p>If you have any questions, feel free to email us:</p>
+				<a class="email-button" href="https://mail.google.com/mail/?view=cm&fs=1&to=tmanav12@outlook.com&su=Your Subject&body=Your message here" target="_blank">Send Email</a>
+				</div>
+		</div>
+	</footer>
+
+</body>
+</html>

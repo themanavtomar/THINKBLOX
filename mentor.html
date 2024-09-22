@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship</title>
+    <link rel="stylesheet" type="text/css" href="styling/home.css">
+	
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+	<link rel="stylesheet" type="text/css" href="chatbot/style.css">
+	
+    <link rel="stylesheet" href="mentor.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="mentor.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+	<script src="chatbot/script.js" defer></script>
+</head>
+<body>
+    <header id="header">
+		<nav>
+			<div class="logo"><a href="images/logo.png" target="_blank"><img src="images/logo.png" alt="logo"></a></div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><div class="dropdown">
+					<a href="" class="dropbtn">Elearn</a>
+					<div class="dropdown-content">
+					  <a href="elearn.html">E-Videos</a>
+					  <a href="ebook.html">E-Books</a>
+					</div>
+				  </div></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="todo.html">To-DO</a></li>
+                <li><a class="active" href="mentor.html">Mentorship</a></li>
+				<li><a href="dictionary.html">Dictionary</a></li>
+				<li><a href="tutor.html">Tutor Nearby</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<!-- <div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/search.jpg" alt="search" onclick=slide()></div> -->
+			<a class="get-started" href="login.html">Get Started</a>
+			<img src="images/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		</div>
+	</header>
+	<header>
+    
+
+
+		<section id="home">
+			<h1 class="h-primary">Welcome To MentorShip Section</h1>
+			<p>Mentorship is like getting direct guidance from someone experienced,</p>
+			<p> helping you on your path. It's like receiving a clear package of wisdom to navigate your journey. </p>
+		</section>
+
+		<section id="benefits">
+			<h2>Benefits of Mentoring</h2>
+			<ul>
+				Personalized guidance<br>
+				Improved study strategies<br>
+				Career advice<br>
+				Increased confidence<br>
+			</ul>
+		</section>
+	
+		<section id="get-involved">
+			<h2>Get Involved</h2>
+			<p>If you're interested in becoming a mentor or a mentee, please get in touch with us. We welcome individuals who are committed to making a difference in the lives of students.</p>
+		</section>
+		<div class="container">
+			<div class="section">
+				<h2>Science</h2>
+				<p>Science encompasses the systematic study and analysis of the different natural occurrences and phenomena </p>
+				<p> through observation, theoretical and experimental evaluation.</p>
+				<br><p>Exams to consider:</p><br>
+				<ul>
+					<li>JEE Main</li>
+					<li>NEET</li>
+				</ul>
+				<p>Colleges and Degrees:</p>
+				<ul>
+					<li>College 1 - B.Sc in Physics</li>
+					<li>College 2 - B.Tech in Computer Science</li>
+				</ul>
+			</div>
+	
+			<div class="section">
+				<h2>Commerce</h2>
+				<p>Commerce is the second most popular one after Science. </p>
+				<p> The Commerce stream subjects comprise wide-ranging disciplines and areas that are focused on the world of Business, Economics and Accountancy</p>
+				<br><p>Exams to consider:</p><br>
+				<ul>
+					<li>CA Foundation</li>
+					<li>B.Com Entrance Exams</li>
+				</ul>
+				<p>Colleges and Degrees:</p>
+				<ul>
+					<li> College 1 - B.Com (Hons)</li>
+					<li>College 2 - CA Program</li>
+				</ul>
+			</div>
+			<div class="section">
+				<h2>Arts</h2>
+				<p>The third and one of the most underrated streams after 10th is Arts/Humanities <br> which is a vastly immense discipline filled with a multitude of sub-disciplines and subjects. <br> It can be defined as an integrated field and Arts stream subjects encompass Humanities, Social Sciences, Liberal Arts, Performing Arts, Literature and Linguistics.</p>
+				<br><p>Exams to consider:</p><br>
+				<ul>
+					<li>Common Entrance Tests for BA Programs</li>
+				</ul>
+				<p>Colleges and Degrees:</p>
+				<ul>
+					<li>College 1 - BA in Fine Arts</li>
+					<li> College 2 - BA in Literature</li>
+				</ul>
+			</div>
+		</div>
+
+	
+
+	<button class="chatbot-toggler">
+		<span class="material-symbols-rounded">mode_comment</span>
+		<span class="material-symbols-outlined">close</span>
+	  </button>
+	  <div class="chatbot">
+		<header>
+		  <h2>Chatbot</h2>
+		  <span class="close-btn material-symbols-outlined">close</span>
+		</header>
+		<ul class="chatbox">
+		  <li class="chat incoming">
+			<span class="material-symbols-outlined">smart_toy</span>
+			<p>Hi there 👋<br>How can I help you today?</p>
+		  </li>
+		</ul>
+		<div class="chat-input">
+		  <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+		  <span id="send-btn" class="material-symbols-rounded">send</span>
+		</div>
+	  </div>
+	  <footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<div class="logo"></div>
+				<div class="social-media">
+					<!-- <a href="#"><img src="images/facebook.png"></a> -->
+					<a href="https://www.instagram.com/manavtomarrr/" target="_blank"><img src="images/insta.png"></a>
+					<a href="https://x.com/themanavtomar" target="_blank"><img src="images/tt.png"></a>
+					<a href="https://www.youtube.com/@manavtomarr" target="_blank"><img src="images/ytube.png"></a>
+					<a href="https://www.linkedin.com/in/themanavtomar/" target="_blank"><img src="images/linkedin.png"></a>
+				</div><br>
+				<p class="rights-text">Copyright © 2024 Created By Team - ThinkBlox</p>
+				<p>If you have any questions, feel free to email us:</p>
+				<a class="email-button" href="https://mail.google.com/mail/?view=cm&fs=1&to=tmanav12@outlook.com&su=Your Subject&body=Your message here" target="_blank">Send Email</a>
+				</div>
+		</div>
+	</footer>
+
+</body>
+</html>
